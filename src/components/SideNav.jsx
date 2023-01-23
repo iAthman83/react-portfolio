@@ -10,7 +10,8 @@ import {
   RiYoutubeFill,
   RiGithubFill,
 } from "react-icons/ri";
-function SideNav() {
+
+function SideNav({ aboutRef, homeRef, projectsRef, workflowRef }) {
   return (
     <div className="fixed top-0 left-0 bg-gray-800 h-screen w-20 flex-none py-6">
       {/* logo */}
@@ -20,9 +21,9 @@ function SideNav() {
       {/* nav */}
       <nav className="flex flex-col justify-center items-center space-y-2">
         {/* home */}
-        <a
-          href="#"
-          className="text-white block p-4 px-auto bg-gray-700 rounded-full hover:bg-yellowAccent hover:rounded-3xl transition-all ease-in-out group relative"
+        <section
+          onClick={() => homeRef.current.scrollIntoView({ behavior: "smooth" })}
+          className="cursor-pointer text-white block p-4 px-auto bg-gray-700 rounded-full hover:bg-yellowAccent hover:rounded-3xl transition-all ease-in-out group relative"
         >
           <HiOutlineHome
             size={24}
@@ -31,11 +32,13 @@ function SideNav() {
           <span className="absolute flex-row w-auto p-2 m-2 px-4 rounded-md left-16 bottom-1 shadow-md text-gray-100 bg-blackBg font-semibold transition-all duration-100 scale-0 origin-left group-hover:scale-100">
             Home
           </span>
-        </a>
+        </section>
         {/* about */}
-        <a
-          href="#"
-          className="text-white block p-4 px-auto bg-gray-700 rounded-full hover:bg-yellowAccent hover:rounded-3xl transition-all ease-in-out group relative"
+        <section
+          onClick={() =>
+            aboutRef.current.scrollIntoView({ behavior: "smooth" })
+          }
+          className="cursor-pointer text-white block p-4 px-auto bg-gray-700 rounded-full hover:bg-yellowAccent hover:rounded-3xl transition-all ease-in-out group relative"
         >
           <HiOutlineUser
             size={24}
@@ -44,11 +47,13 @@ function SideNav() {
           <span className="absolute flex-row w-auto p-2 m-2 px-4 rounded-md left-16 bottom-1 shadow-md text-gray-100 bg-blackBg font-semibold transition-all duration-100 scale-0 origin-left group-hover:scale-100">
             About
           </span>
-        </a>
+        </section>
         {/* projects */}
-        <a
-          href="#"
-          className="text-white block p-4 px-auto bg-gray-700 rounded-full hover:bg-yellowAccent hover:rounded-3xl transition-all ease-in-out group relative"
+        <section
+          onClick={() =>
+            projectsRef.current.scrollIntoView({ behavior: "smooth" })
+          }
+          className="cursor-pointer text-white block p-4 px-auto bg-gray-700 rounded-full hover:bg-yellowAccent hover:rounded-3xl transition-all ease-in-out group relative"
         >
           <HiOutlineCube
             size={24}
@@ -57,11 +62,13 @@ function SideNav() {
           <span className="absolute flex-row w-auto p-2 m-2 px-4 rounded-md left-16 bottom-1 shadow-md text-gray-100 bg-blackBg font-semibold transition-all duration-100 scale-0 origin-left group-hover:scale-100">
             Projects
           </span>
-        </a>
+        </section>
         {/* workflow */}
-        <a
-          href="#"
-          className="text-white block p-4 px-auto bg-gray-700 rounded-full hover:bg-yellowAccent hover:rounded-3xl transition-all ease-in-out group relative"
+        <section
+          onClick={() =>
+            workflowRef.current.scrollIntoView({ behavior: "smooth" })
+          }
+          className="cursor-pointer text-white block p-4 px-auto bg-gray-700 rounded-full hover:bg-yellowAccent hover:rounded-3xl transition-all ease-in-out group relative"
         >
           <HiOutlineDesktopComputer
             size={24}
@@ -70,7 +77,7 @@ function SideNav() {
           <span className="absolute flex-row w-auto p-2 m-2 px-4 rounded-md left-16 bottom-1 shadow-md text-gray-100 bg-blackBg font-semibold transition-all duration-100 scale-0 origin-left group-hover:scale-100">
             Workflow
           </span>
-        </a>
+        </section>
       </nav>
       {/* socials */}
       <div className="flex flex-col justify-center items-center space-y-2 mt-8">

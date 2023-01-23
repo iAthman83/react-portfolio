@@ -4,7 +4,14 @@ function App() {
   return (
     <>
       <SideNav />
-      <div className="container mx-auto bg-green-100">This</div>
+      <div className="container mx-auto">
+        <h1>This is title</h1>
+        <p>You</p>
+        <p>You</p>
+        <p>You</p>
+        <p>You</p>
+        <p>You</p>
+      </div>
     </>
   );
 }

@@ -410,6 +410,7 @@ module.exports = {
         '"Courier New"',
         "monospace",
       ],
+      sofia: ["Sofia Sans", "sans-serif"],
     },
     fontSize: {
       xs: ["0.75rem", { lineHeight: "1rem" }],

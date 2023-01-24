@@ -45,6 +45,12 @@ module.exports = {
       yellowAccent: "#FFAB40",
       grayBg: "#2A303C",
       blackBg: "#212121",
+      sideBarBg: "#1A1D1F",
+      sideBarText: "#FCFCFC",
+      sideBarHighlight: "#272A30",
+      youtubeRed: "#FF0101",
+      linkedinBlue: "#0B66C3",
+      twitterBlue: "#1C9BF1",
     }),
     columns: {
       auto: "auto",

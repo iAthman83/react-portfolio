@@ -18,10 +18,12 @@ function App() {
         projectsRef={projectsRef}
         workflowRef={workflowRef}
       />
-      <HomeSection ref={homeRef} />
-      <AboutSection ref={aboutRef} />
-      <ProjectsSection ref={projectsRef} />
-      <WorkflowSection ref={workflowRef} />
+      <div className="ml-48">
+        <HomeSection ref={homeRef} />
+        <AboutSection ref={aboutRef} />
+        <ProjectsSection ref={projectsRef} />
+        <WorkflowSection ref={workflowRef} />
+      </div>
     </>
   );
 }

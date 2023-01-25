@@ -51,6 +51,7 @@ module.exports = {
       youtubeRed: "#FF0101",
       linkedinBlue: "#0B66C3",
       twitterBlue: "#1C9BF1",
+      siteBg: "#2A303C",
     }),
     columns: {
       auto: "auto",

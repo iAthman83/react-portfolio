@@ -13,13 +13,13 @@ import {
 
 function SideNav({ aboutRef, homeRef, projectsRef, workflowRef }) {
   return (
-    <div className="fixed flex flex-col justify-between top-0 left-0 bg-sideBarBg h-screen w-48 flex-none py-6">
+    <div className="fixed flex flex-col justify-between px-4 top-0 left-0 bg-sideBarBg h-screen w-48 flex-none py-6">
       {/* logo */}
-      <div className="flex items-center justify-center my-4 py-4 p-4 px-auto">
+      <div className="flex items-center justify-center my-4 py-4 px-auto">
         <h1>Program with Abu</h1>
       </div>
       {/* nav */}
-      <nav className="flex flex-col justify-center mx-4 space-y-2">
+      <nav className="flex flex-col justify-center space-y-2">
         {/* home */}
         <section
           onClick={() => homeRef.current.scrollIntoView({ behavior: "smooth" })}
@@ -60,7 +60,7 @@ function SideNav({ aboutRef, homeRef, projectsRef, workflowRef }) {
         </section>
       </nav>
       {/* socials */}
-      <div className="flex flex-col justify-center mx-4 space-y-2 mt-8">
+      <div className="flex flex-col justify-center space-y-2 mt-8">
         {/* YouTube */}
         <a
           href="https://www.youtube.com/@programwithabu"

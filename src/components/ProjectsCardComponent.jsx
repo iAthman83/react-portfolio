@@ -1,6 +1,6 @@
 import { RiYoutubeFill, RiGithubFill, RiGlobalLine } from "react-icons/ri";
 
-const ProjectsCardComponent = () => {
+const ProjectsCardComponent = (props) => {
   return (
     <div className="bg-sideBarHighlight w-72 rounded-lg overflow-hidden cursor-pointer transition-all duration-100 hover:scale-105">
       {/* <img
@@ -8,18 +8,16 @@ const ProjectsCardComponent = () => {
         alt=""
         srcset=""
       /> */}
-      <div className="bg-linkedinBlue h-48 flex justify-center items-center">
-        <RiYoutubeFill size={30} />
+      <div className="bg-linkedinBlue h-48 flex justify-center items-center overflow-hidden">
+        {/* <RiYoutubeFill size={30} /> */}
+        <img className="" src={props.image} alt="" srcset="" />
       </div>
       {/* Desccription */}
       <div className="px-2 my-6 flex flex-col space-y-4">
         <h1 className="text-sideBarText text-2xl font-sofia font-extrabold">
-          Coolabee
+          {props.title}
         </h1>
-        <p className="text-base">
-          This is a fully working ecomerce website with search functionality,
-          cart and account
-        </p>
+        <p className="text-base">{props.description}</p>
       </div>
       {/* Stack */}
       <div className="flex flex-row my-6 px-2 space-x-2">

@@ -1,5 +1,6 @@
 import { forwardRef } from "react";
 import ProjectsCardComponent from "../components/ProjectsCardComponent";
+import { projects } from "../data/projectsData";
 
 const ProjectsSection = forwardRef((props, ref) => {
   return (
@@ -14,11 +15,16 @@ const ProjectsSection = forwardRef((props, ref) => {
         </p>
         <div className="border-b-8 border-zinc-400 w-28 text-sideBarBg">.</div>
       </div>
-      <div className="flex flex-row flex-wrap space-x-4 items-center justify-center">
-        <ProjectsCardComponent />
-        <ProjectsCardComponent />
-        <ProjectsCardComponent />
-        <ProjectsCardComponent />
+      <div className="flex flex-row flex-wrap space-x-4 justify-center space-y-10">
+        {projects.map((project) => (
+          <li className="list-none first:mt-10 first:ml-4" key={project.id}>
+            <ProjectsCardComponent
+              title={project.title}
+              image={project.image}
+              description={project.description}
+            />
+          </li>
+        ))}
       </div>
     </div>
   );

@@ -52,6 +52,7 @@ module.exports = {
       linkedinBlue: "#0B66C3",
       twitterBlue: "#1C9BF1",
       siteBg: "#2A303C",
+      mailBlue: "#004B87",
     }),
     columns: {
       auto: "auto",

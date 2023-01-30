@@ -6,6 +6,7 @@ const projects = [
     title: "Coolabee Ecommerce Website",
     description:
       "This is a fully working ecomerce website with search functionality, cart and account",
+    stack: ["#javascript", "#vuejs", "#firebase"],
   },
   {
     id: 3,
@@ -14,6 +15,7 @@ const projects = [
     title: "Program With Abu",
     description:
       "This is my personal website where I showcase my portfolio and my projects",
+    stack: ["#javascript", "#reactjs"],
   },
   {
     id: 2,
@@ -22,6 +24,7 @@ const projects = [
     title: "Shomi Ecommerce Website",
     description:
       "This is a fully working ecomerce website with search functionality, cart and account",
+    stack: ["#javascript", "#reactjs", "firebase"],
   },
   {
     id: 4,
@@ -30,6 +33,7 @@ const projects = [
     title: "Home on the Nile",
     description:
       "A guest house in Jinja for guests to come stay when on holiday in Jinja",
+    stack: ["#wordpress"],
   },
   {
     id: 5,
@@ -38,6 +42,7 @@ const projects = [
     title: "Ugandan Chemist",
     description:
       "This is a learning management system for students who want to learn chemistry",
+    stack: ["#wordpress"],
   },
   {
     id: 6,
@@ -46,6 +51,7 @@ const projects = [
     title: "Horizon International School Jinja",
     description:
       "This is fully functioning website for an international school based in Jinja, Uganda, Africa",
+    stack: ["#wordpress"],
   },
 ];
 

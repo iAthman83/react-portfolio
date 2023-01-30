@@ -9,6 +9,7 @@ import {
   RiTwitterFill,
   RiYoutubeFill,
   RiGithubFill,
+  RiMailFill,
 } from "react-icons/ri";
 
 function SideNav({ aboutRef, homeRef, projectsRef, workflowRef }) {
@@ -61,6 +62,16 @@ function SideNav({ aboutRef, homeRef, projectsRef, workflowRef }) {
       </nav>
       {/* socials */}
       <div className="flex flex-col justify-center space-y-2 mt-8">
+        {/* Email */}
+        <a
+          href="mailto:abuathman83@gmail.com"
+          target="_blank"
+          rel="noreferrer"
+          className="flex space-x-2 items-center cursor-pointer text-white p-2 px-auto bg-sideBarHighlight rounded-lg hover:bg-zinc-700"
+        >
+          <RiMailFill size={20} className="text-mailBlue" />
+          <h1 className="">Email Me</h1>
+        </a>
         {/* YouTube */}
         <a
           href="https://www.youtube.com/@programwithabu"

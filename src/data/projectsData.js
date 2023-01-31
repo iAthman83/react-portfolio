@@ -6,7 +6,11 @@ const projects = [
     title: "Coolabee Ecommerce Website",
     description:
       "This is a fully working ecomerce website with search functionality, cart and account",
-    stack: ["#javascript", "#vuejs", "#firebase"],
+    stack: [
+      { name: "#javascript", color: "bg-purple-600" },
+      { name: "#vuejs", color: "bg-green-700" },
+      { name: "#firebase", color: "bg-yellow-400", fontColor: "text-grayBg" },
+    ],
   },
   {
     id: 3,
@@ -15,7 +19,10 @@ const projects = [
     title: "Program With Abu",
     description:
       "This is my personal website where I showcase my portfolio and my projects",
-    stack: ["#javascript", "#reactjs"],
+    stack: [
+      { name: "#javascript", color: "bg-purple-600" },
+      { name: "#reactjs", color: "bg-red-600" },
+    ],
   },
   {
     id: 2,
@@ -24,7 +31,11 @@ const projects = [
     title: "Shomi Ecommerce Website",
     description:
       "This is a fully working ecomerce website with search functionality, cart and account",
-    stack: ["#javascript", "#reactjs", "firebase"],
+    stack: [
+      { name: "#javascript", color: "bg-purple-600" },
+      { name: "#reactjs", color: "bg-red-700" },
+      { name: "#firebase", color: "bg-yellow-400", fontColor: "text-grayBg" },
+    ],
   },
   {
     id: 4,
@@ -33,7 +44,7 @@ const projects = [
     title: "Home on the Nile",
     description:
       "A guest house in Jinja for guests to come stay when on holiday in Jinja",
-    stack: ["#wordpress"],
+    stack: [{ name: "#wordpress", color: "bg-blue-700" }],
   },
   {
     id: 5,
@@ -42,7 +53,7 @@ const projects = [
     title: "Ugandan Chemist",
     description:
       "This is a learning management system for students who want to learn chemistry",
-    stack: ["#wordpress"],
+    stack: [{ name: "#wordpress", color: "bg-blue-700" }],
   },
   {
     id: 6,
@@ -51,7 +62,7 @@ const projects = [
     title: "Horizon International School Jinja",
     description:
       "This is fully functioning website for an international school based in Jinja, Uganda, Africa",
-    stack: ["#wordpress"],
+    stack: [{ name: "#wordpress", color: "bg-blue-700" }],
   },
 ];
 

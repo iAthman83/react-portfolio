@@ -21,15 +21,15 @@ const ProjectsCardComponent = (props) => {
       </div>
       {/* Stack */}
       <div className="flex flex-row my-6 px-2 space-x-2">
-        <div className="flex bg-yellow-600 px-2 rounded-md">
-          <h1 className="text-sideBarText">#javascript</h1>
-        </div>
-        <div className="bg-green-700 px-2 rounded-lg">
-          <h1 className="text-sideBarText">#vue</h1>
-        </div>
-        <div className="bg-yellow-400 px-2 rounded-lg">
-          <h1 className="text-sideBarHighlight">#firebase</h1>
-        </div>
+        {props.stack.map((item) => (
+          <li
+            className={`${item.color} px-2 rounded-md ${
+              item.fontColor ? item.fontColor : "text-sideBarText"
+            }`}
+          >
+            {item.name}
+          </li>
+        ))}
       </div>
       {/* Links */}
       <div className="flex flex-row my-6 px-2 space-x-2">

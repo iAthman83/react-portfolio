@@ -6,7 +6,7 @@ const ProjectsSection = forwardRef((props, ref) => {
   return (
     <div
       ref={ref}
-      className="container mx-auto bg-grayBg flex flex-col space-y-20 my-8"
+      className="container mx-auto bg-grayBg flex flex-col space-y-20 py-8"
     >
       <div className="flex flex-col items-center justify-center space-y-4">
         <h1 className="text-5xl text-sideBarText font-sofia font-extrabold">

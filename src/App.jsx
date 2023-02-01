@@ -11,7 +11,7 @@ function App() {
   const projectsRef = useRef(null);
   const workflowRef = useRef(null);
   return (
-    <>
+    <div className="bg-grayBg">
       <SideNav
         aboutRef={aboutRef}
         homeRef={homeRef}
@@ -24,7 +24,7 @@ function App() {
         <ProjectsSection ref={projectsRef} />
         <WorkflowSection ref={workflowRef} />
       </div>
-    </>
+    </div>
   );
 }
 

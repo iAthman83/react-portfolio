@@ -12,7 +12,7 @@ const AboutSection = forwardRef((props, ref) => {
     },
   };
   return (
-    <div ref={ref} className="container mx-auto bg-grayBg py-20">
+    <div ref={ref} className="container mx-auto bg-grayBg pb-20 px-12">
       <div className="flex flex-col items-center justify-center space-y-4">
         <h1 className="text-5xl text-sideBarText font-sofia font-extrabold">
           ABOUT ME

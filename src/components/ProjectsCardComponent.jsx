@@ -12,7 +12,7 @@ const ProjectsCardComponent = (props) => {
         <h1 className="text-sideBarText text-2xl font-sofia font-extrabold">
           {props.title}
         </h1>
-        <p className="text-base">{props.description}</p>
+        <p className="text-base text-textGray">{props.description}</p>
       </div>
       {/* Stack */}
       <div className="flex flex-row my-6 px-2 space-x-2">
@@ -31,10 +31,10 @@ const ProjectsCardComponent = (props) => {
       {/* Links */}
       <div className="flex flex-row my-6 px-2 space-x-2">
         <div className="flex rounded-md">
-          <RiGithubFill size={30} />
+          <RiGithubFill className="text-textGray" size={30} />
         </div>
         <div className="flex rounded-md">
-          <RiGlobalLine size={30} />
+          <RiGlobalLine className="text-textGray" size={30} />
         </div>
       </div>
     </div>

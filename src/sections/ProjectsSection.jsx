@@ -4,12 +4,15 @@ import { projects } from "../data/projectsData";
 
 const ProjectsSection = forwardRef((props, ref) => {
   return (
-    <div ref={ref} className="container mx-auto flex flex-col space-y-20 my-8">
+    <div
+      ref={ref}
+      className="container mx-auto bg-grayBg flex flex-col space-y-20 my-8"
+    >
       <div className="flex flex-col items-center justify-center space-y-4">
         <h1 className="text-5xl text-sideBarText font-sofia font-extrabold">
           PROJECTS
         </h1>
-        <p className="text-base mb-18">
+        <p className="text-base mb-18 text-textGray">
           Have a look at some of my projects below, ranging from React to Vue
           and WordPress
         </p>

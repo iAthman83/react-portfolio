@@ -18,8 +18,7 @@ const AboutSection = forwardRef((props, ref) => {
           ABOUT ME
         </h1>
         <p className="text-base mb-18 text-textGray">
-          Have a look at some of my projects below, ranging from React to Vue
-          and WordPress
+          Nothing here, just me going on and on about myself
         </p>
         <div className="border-b-8 border-zinc-400 w-28 text-sideBarBg">.</div>
       </div>

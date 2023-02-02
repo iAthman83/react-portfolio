@@ -8,17 +8,17 @@ const HomeSection = forwardRef((props, ref) => {
       className="container mx-auto flex h-screen bg-grayBg pb-20 pt-10 items-center px-12"
     >
       <div className="flex flex-1 flex-col space-y-8">
-        <h1 className="text-2xl">Hi, I am</h1>
+        <h1 className="text-2xl text-textGray">Hi, I am</h1>
         <h1 className="text-6xl text-sideBarText font-sofia font-extrabold">
           Abu <span className="text-teal-400">Athman.</span>
         </h1>
-        <h1 className="text-2xl">
+        <h1 className="text-2xl text-textGray">
           A dynamic{" "}
           <span className="text-orange-400">full stack software developer</span>{" "}
           with a talent for creating innovative solutions that drive business
           success.
         </h1>
-        <h1 className="text-2xl">
+        <h1 className="text-2xl text-textGray">
           Proficient in <span className="text-emerald-400">ReactJS,</span>{" "}
           <span className="text-yellow-400">React Native,</span>{" "}
           <span className="text-red-400">VueJS,</span>{" "}

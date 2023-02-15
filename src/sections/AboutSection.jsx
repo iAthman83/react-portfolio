@@ -29,7 +29,8 @@ const AboutSection = forwardRef((props, ref) => {
           ABOUT ME
         </h1>
         <p className="text-base mb-18 text-textGray justify-center">
-          Nothing here, just me going on and on about myself
+          Welcome to my world! If you're reading this, chances are you're
+          wondering who I am and what makes me tick. Well, I'm glad you asked!
         </p>
         <div className="border-b-8 border-zinc-400 w-28 text-sideBarBg">.</div>
       </div>

@@ -13,8 +13,9 @@ const ProjectsSection = forwardRef((props, ref) => {
           PROJECTS
         </h1>
         <p className="text-base mb-18 text-textGray">
-          Have a look at some of my projects below, ranging from React to Vue
-          and WordPress
+          Welcome to my playground of projects! This is where I get to show off
+          all the cool stuff I've been working on. So buckle up and get ready
+          for a wild ride!
         </p>
         <div className="border-b-8 border-zinc-400 w-28 text-sideBarBg">.</div>
       </div>

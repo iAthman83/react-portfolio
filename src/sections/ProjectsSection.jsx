@@ -30,6 +30,8 @@ const ProjectsSection = forwardRef((props, ref) => {
               image={project.image}
               description={project.description}
               stack={project.stack}
+              github={project.github}
+              website={project.webiste}
             />
           </li>
         ))}

@@ -1,5 +1,6 @@
 import { forwardRef } from "react";
 import image from "../assets/man-desk.png";
+import portrait from "../assets/portrait.png";
 
 const HomeSection = forwardRef((props, ref) => {
   return (
@@ -29,7 +30,7 @@ const HomeSection = forwardRef((props, ref) => {
         </h1>
       </div>
       <div className="flex flex-1 justify-center">
-        <img className="h-96" src={image} alt="" srcset="" />
+        <img className="h-96 rounded-box" src={portrait} alt="" srcset="" />
       </div>
     </div>
   );

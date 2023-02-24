@@ -30,12 +30,22 @@ const ProjectsCardComponent = (props) => {
       </div>
       {/* Links */}
       <div className="flex flex-row my-6 px-2 space-x-2">
-        <div className="flex rounded-md">
+        <a
+          href={props.github}
+          target="_blank"
+          rel="noreferrer"
+          className="flex rounded-md"
+        >
           <RiGithubFill className="text-textGray" size={30} />
-        </div>
-        <div className="flex rounded-md">
+        </a>
+        <a
+          href={props.website}
+          target="_blank"
+          rel="noreferrer"
+          className="flex rounded-md"
+        >
           <RiGlobalLine className="text-textGray" size={30} />
-        </div>
+        </a>
       </div>
     </div>
   );

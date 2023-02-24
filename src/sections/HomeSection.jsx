@@ -6,7 +6,7 @@ const HomeSection = forwardRef((props, ref) => {
   return (
     <div
       ref={ref}
-      className="md:container md:mx-auto md:flex md:h-screen bg-grayBg md:pb-20 md:pt-10 md:items-center md:px-12 flex flex-col-reverse md:flex-row px-4 md:my-4"
+      className="md:container md:mx-auto md:flex md:h-screen bg-grayBg md:pb-20 md:pt-10 md:items-center md:px-12 flex flex-col py-8 space-y-4 md:flex-row px-4 md:my-4"
     >
       <div className="flex flex-1 flex-col space-y-8">
         <h1 className="md:text-2xl text-textGray">Hi, I am</h1>
@@ -30,7 +30,12 @@ const HomeSection = forwardRef((props, ref) => {
         </h1>
       </div>
       <div className="flex flex-1 justify-center">
-        <img className="h-96 rounded-box" src={portrait} alt="" srcset="" />
+        <img
+          className="md:h-96 md:rounded-box rounded-lg"
+          src={portrait}
+          alt=""
+          srcset=""
+        />
       </div>
     </div>
   );

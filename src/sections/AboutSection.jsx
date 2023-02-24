@@ -82,7 +82,7 @@ const AboutSection = forwardRef((props, ref) => {
             opts={opts2}
           />
           <YouTube
-            className=" hidden md:block rounded-lg overflow-hidden w-full"
+            className="hidden md:block rounded-lg overflow-hidden w-full"
             videoId="_G5RxzxJz4A"
             opts={opts1}
           />

@@ -11,7 +11,7 @@ const HomeSection = forwardRef((props, ref) => {
       <div className="flex flex-1 flex-col space-y-8">
         <h1 className="md:text-2xl text-textGray">Hi, I am</h1>
         <h1 className="text-6xl text-sideBarText font-sofia font-extrabold">
-          Abu <span className="text-teal-400">Athman.</span>
+          Abu <span className="text-teal-400">Athman</span>
         </h1>
         <h1 className="md:text-2xl text-textGray">
           A dynamic{" "}

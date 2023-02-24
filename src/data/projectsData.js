@@ -11,6 +11,8 @@ const projects = [
       { name: "#vuejs", color: "bg-green-700" },
       { name: "#firebase", color: "bg-yellow-400", fontColor: "text-grayBg" },
     ],
+    github: "https://github.com/iAthman83/coolabee-ecommerce-website-vue",
+    webiste: "https://coolabee.vercel.app/",
   },
   {
     id: 3,
@@ -23,6 +25,8 @@ const projects = [
       { name: "#javascript", color: "bg-purple-600" },
       { name: "#reactjs", color: "bg-red-600" },
     ],
+    github: "https://github.com/iAthman83/react-portfolio",
+    webiste: "https://abuportfolio.vercel.app/",
   },
   {
     id: 2,
@@ -36,6 +40,8 @@ const projects = [
       { name: "#reactjs", color: "bg-red-700" },
       { name: "#firebase", color: "bg-yellow-400", fontColor: "text-grayBg" },
     ],
+    github: "https://github.com/iAthman83/react-portfolio",
+    webiste: "https://abuportfolio.vercel.app/",
   },
   {
     id: 4,

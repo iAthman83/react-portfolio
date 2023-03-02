@@ -10,7 +10,7 @@ const HomeSection = forwardRef((props, ref) => {
       style={{ backgroundImage: `url(${heroImg})` }}
       className="bg-cover bg-center hero-overlay md:container md:mx-auto md:flex md:h-screen bg-grayBg md:items-center md:px-0 flex flex-col py-8 md:flex-row px-4"
     >
-      <div className="h-full w-full bg-cover bg-center backdrop-brightness-75 md:container md:mx-auto md:flex md:h-screen md:pb-20 md:pt-10 md:items-center flex flex-col py-8 space-y-2 md:flex-row px-4">
+      <div className="h-full w-full bg-cover bg-center backdrop-brightness-75 md:container md:mx-auto md:flex md:h-screen md:pb-20 md:pt-10 md:items-center flex flex-col py-8 space-y-2 md:flex-row px-4 md:px-12">
         <div className="flex flex-1 flex-col space-y-4">
           <h1 className="md:text-2xl text-white">Hi, I am</h1>
           <h1 className="text-6xl text-siteBg font-sofia font-extrabold">

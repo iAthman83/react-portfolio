@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   HiOutlineHome,
   HiOutlineUser,
@@ -14,8 +15,45 @@ import {
 import portrait from "../assets/portrait-rounded.png";
 
 function SideNav({ aboutRef, homeRef, projectsRef, workflowRef }) {
+  const [home, setHome] = useState(true);
+  const [about, setAbout] = useState(false);
+  const [portfolio, setPortfolio] = useState(false);
+
+  // change home nav design
+  const handleClickHome = () => {
+    if (!about && !portfolio) {
+      setHome(home);
+    } else {
+      setHome(!home);
+      setAbout(false);
+      setPortfolio(false);
+    }
+    homeRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+  // change about nav design
+  const handleClickAbout = () => {
+    if (!home && !portfolio) {
+      setAbout(about);
+    } else {
+      setAbout(!about);
+      setHome(false);
+      setPortfolio(false);
+    }
+    aboutRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+  // change projects nav design
+  const handleClickProjects = () => {
+    if (!about && !home) {
+      setPortfolio(portfolio);
+    } else {
+      setPortfolio(!portfolio);
+      setHome(false);
+      setAbout(false);
+    }
+    projectsRef.current.scrollIntoView({ behavior: "smooth" });
+  };
   return (
-    <div className="fixed w-full bottom-0 z-10 md:fixed md:flex flex-row md:flex-col  px-4 md:top-0 md:left-0 bg-sideBarBg md:h-screen md:w-96 md:flex-none py-2 md:py-2">
+    <div className="fixed w-full bottom-0 z-10 md:fixed md:flex flex-row md:flex-col  px-4 md:top-0 md:left-0 bg-sideBarBg md:h-screen md:w-80 md:flex-none py-2 md:py-2">
       {/* logo */}
       <div className="hidden md:flex md:flex-col md:items-center md:justify-center md:my-2 py-2 space-y-4 px-auto">
         <img
@@ -84,46 +122,82 @@ function SideNav({ aboutRef, homeRef, projectsRef, workflowRef }) {
         </a>
       </div>
       {/* nav */}
-      <nav className="hidden md:flex md:flex-col md:justify-center space-x-1 md:space-x-0 md:space-y-2 md:ml-14 mt-12">
+      <nav className="hidden md:flex md:flex-col md:justify-center space-x-1 md:space-x-0 md:space-y-2 md:ml-6 mt-12">
         {/* home */}
         <section
-          onClick={() => homeRef.current.scrollIntoView({ behavior: "smooth" })}
-          className="flex space-x-4 items-center cursor-pointer text-white p-2 px-auto rounded-lg hover:bg-zinc-700"
+          onClick={handleClickHome}
+          // onClick={() => homeRef.current.scrollIntoView({ behavior: "smooth" })}
+          className="group flex space-x-4 items-center cursor-pointer text-white p-2 px-auto rounded-lg hover:bg-zinc-700"
         >
-          <HiOutlineHome size={22} className="text-zinc-400" />
-          <h1 className="hidden md:block text-zinc-400 text-lg">Home</h1>
+          <HiOutlineHome
+            size={24}
+            className={home ? "text-blue-400" : "text-zinc-400"}
+          />
+          <h1
+            className={
+              home
+                ? "hidden md:block text-white text-lg"
+                : "hidden md:block text-zinc-400 text-lg"
+            }
+          >
+            Home
+          </h1>
         </section>
         {/* about */}
         <section
-          onClick={() =>
-            aboutRef.current.scrollIntoView({ behavior: "smooth" })
-          }
+          onClick={handleClickAbout}
+          // onClick={() =>
+          //   aboutRef.current.scrollIntoView({ behavior: "smooth" })
+          // }
           className="flex space-x-4 items-center cursor-pointer text-zinc-400 p-2 px-auto rounded-lg hover:bg-zinc-700"
         >
-          <HiOutlineUser size={22} className="text-zinc-400" />
-          <h1 className="hidden md:block">About</h1>
+          <HiOutlineUser
+            size={24}
+            className={about ? "text-blue-400" : "text-zinc-400"}
+          />
+          <h1
+            className={
+              about
+                ? "hidden md:block text-white text-lg"
+                : "hidden md:block text-zinc-400 text-lg"
+            }
+          >
+            About
+          </h1>
         </section>
 
-        {/* projects */}
+        {/* portfolio */}
         <section
-          onClick={() =>
-            projectsRef.current.scrollIntoView({ behavior: "smooth" })
-          }
+          onClick={handleClickProjects}
+          // onClick={() =>
+          //   projectsRef.current.scrollIntoView({ behavior: "smooth" })
+          // }
           className="flex space-x-4 items-center cursor-pointer text-white p-2 px-auto rounded-lg hover:bg-zinc-700"
         >
-          <HiOutlineCube size={22} className="text-zinc-400" />
-          <h1 className="hidden md:block text-zinc-400">Projects</h1>
+          <HiOutlineCube
+            size={24}
+            className={portfolio ? "text-blue-400" : "text-zinc-400"}
+          />
+          <h1
+            className={
+              portfolio
+                ? "hidden md:block text-white text-lg"
+                : "hidden md:block text-zinc-400 text-lg"
+            }
+          >
+            Portfolio
+          </h1>
         </section>
         {/* workflow */}
-        <section
+        {/* <section
           onClick={() =>
             workflowRef.current.scrollIntoView({ behavior: "smooth" })
           }
           className="flex space-x-4 items-center cursor-pointer text-white p-2 px-auto rounded-lg hover:bg-zinc-700"
         >
-          <HiOutlineDesktopComputer size={22} className="text-zinc-400" />
+          <HiOutlineDesktopComputer size={24} className="text-zinc-400" />
           <h1 className="hidden md:block text-zinc-400">Workflow</h1>
-        </section>
+        </section> */}
       </nav>
     </div>
   );

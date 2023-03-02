@@ -2,7 +2,7 @@ import { useRef } from "react";
 import SideNav from "./components/SideNav";
 import AboutSection from "./sections/AboutSection";
 import HomeSection from "./sections/HomeSection";
-import ProjectsSection from "./sections/ProjectsSection";
+import PortfolioSection from "./sections/PortfolioSection";
 import WorkflowSection from "./sections/WorkflowSection";
 
 function App() {
@@ -18,10 +18,10 @@ function App() {
         projectsRef={projectsRef}
         workflowRef={workflowRef}
       />
-      <div className="md:ml-96">
+      <div className="md:ml-80">
         <HomeSection ref={homeRef} />
         <AboutSection ref={aboutRef} />
-        <ProjectsSection ref={projectsRef} />
+        <PortfolioSection ref={projectsRef} />
         <WorkflowSection ref={workflowRef} />
       </div>
     </div>

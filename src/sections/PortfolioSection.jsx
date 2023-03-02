@@ -2,7 +2,7 @@ import { forwardRef } from "react";
 import ProjectsCardComponent from "../components/ProjectsCardComponent";
 import { projects } from "../data/projectsData";
 
-const ProjectsSection = forwardRef((props, ref) => {
+const PortfolioSection = forwardRef((props, ref) => {
   return (
     <div
       ref={ref}
@@ -40,4 +40,4 @@ const ProjectsSection = forwardRef((props, ref) => {
   );
 });
 
-export default ProjectsSection;
+export default PortfolioSection;

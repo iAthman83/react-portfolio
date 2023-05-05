@@ -1,7 +1,5 @@
 import { forwardRef } from "react";
-import image from "../assets/man-desk.png";
-import portrait from "../assets/portrait.png";
-import heroImg from "../assets/heroImg.png";
+import heroImg from "../assets/sitting-webp.webp";
 
 const HomeSection = forwardRef((props, ref) => {
   return (
@@ -14,7 +12,7 @@ const HomeSection = forwardRef((props, ref) => {
         <div className="flex flex-1 flex-col space-y-4">
           <h1 className="md:text-2xl text-white">Hi, I am</h1>
           <h1 className="text-6xl text-siteBg font-sofia font-extrabold">
-            Abu Athman
+            Abu <span className="text-redPrimary">Athman</span>
           </h1>
           <h1 className="md:text-2xl text-white">
             A dynamic full stack software developer with a talent for creating

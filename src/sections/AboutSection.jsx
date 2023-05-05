@@ -22,7 +22,7 @@ const AboutSection = forwardRef((props, ref) => {
   return (
     <div
       ref={ref}
-      className="md:block md:container md:mx-auto bg-grayBg md:pb-20 md:px-12 md:my-0 my-12 px-4"
+      className="md:block md:container md:mx-auto bg-grayBg md:pb-20 md:px-12 md:mt-24 mt-12 px-4"
     >
       <div className="flex flex-col items-center justify-center space-y-4">
         <h1 className="text-5xl text-sideBarText font-sofia font-extrabold">
@@ -51,7 +51,7 @@ const AboutSection = forwardRef((props, ref) => {
             developments. I also like to share my knowledge through video
             tutorials on my YouTube channel.
           </p>
-          <div className="flex space-x-4">
+          <div className="flex justify-center space-x-4">
             <a
               href="mailto:abuathman83@gmail.com"
               target="_blank"

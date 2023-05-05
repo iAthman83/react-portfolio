@@ -3,11 +3,11 @@ import { RiYoutubeFill, RiGithubFill, RiGlobalLine } from "react-icons/ri";
 const ProjectsCardComponent = (props) => {
   return (
     <div className="bg-sideBarHighlight w-72 rounded-lg overflow-hidden cursor-pointer transition-all duration-100 hover:scale-105">
-      <div className="bg-linkedinBlue h-48 flex justify-center items-center overflow-hidden">
+      <div className="bg-projectCardBg h-48 flex justify-center items-center overflow-hidden">
         {/* <RiYoutubeFill size={30} /> */}
-        <img className="" src={props.image} alt="" srcset="" />
+        <img className="" src={props.image} alt="" />
       </div>
-      {/* Desccription */}
+      {/* Description */}
       <div className="px-2 my-6 flex flex-col space-y-4">
         <h1 className="text-sideBarText text-2xl font-sofia font-extrabold">
           {props.title}
@@ -15,9 +15,10 @@ const ProjectsCardComponent = (props) => {
         <p className="text-base text-textGray">{props.description}</p>
       </div>
       {/* Stack */}
-      <div className="flex flex-row my-6 px-2 space-x-2">
+      <ul className="flex flex-row my-6 px-2 space-x-2">
         {props.stack.map((item) => (
           <li
+            key={item.name}
             className={`${
               item.color
             } px-2 py-1 font-semibold text-sm rounded-md ${
@@ -27,7 +28,7 @@ const ProjectsCardComponent = (props) => {
             {item.name}
           </li>
         ))}
-      </div>
+      </ul>
       {/* Links */}
       <div className="flex flex-row my-6 px-2 space-x-2">
         <a

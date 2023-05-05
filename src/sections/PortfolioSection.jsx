@@ -6,11 +6,11 @@ const PortfolioSection = forwardRef((props, ref) => {
   return (
     <div
       ref={ref}
-      className="container mx-auto bg-grayBg md:flex flex-col space-y-20 py-20"
+      className="container mx-auto bg-grayBg md:flex flex-col space-y-20 py-12 px-4 pb-24"
     >
       <div className="flex flex-col items-center justify-center space-y-4">
-        <h1 className="text-5xl text-sideBarText font-sofia font-extrabold">
-          PROJECTS
+        <h1 className="text-5xl text-sideBarText font-sofia font-extrabold uppercase">
+          My portfolio
         </h1>
         <p className="text-base mb-18 text-textGray">
           Welcome to my playground of projects! This is where I get to show off
@@ -31,7 +31,7 @@ const PortfolioSection = forwardRef((props, ref) => {
               description={project.description}
               stack={project.stack}
               github={project.github}
-              website={project.webiste}
+              website={project.website}
             />
           </li>
         ))}

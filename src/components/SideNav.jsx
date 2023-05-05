@@ -12,7 +12,7 @@ import {
   RiGithubFill,
   RiMailFill,
 } from "react-icons/ri";
-import portrait from "../assets/portrait-rounded.png";
+import portrait from "../assets/portrait-rounded-webp.webp";
 
 function SideNav({ aboutRef, homeRef, projectsRef, workflowRef }) {
   const [home, setHome] = useState(true);

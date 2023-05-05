@@ -1,86 +1,117 @@
+import colabee from "../assets/coolabee.png";
+import portfolio from "../assets/portfolio.png";
+import shomi from "../assets/shomi.png";
+import wordpress from "../assets/wordpress.png";
+import businessCard from "../assets/businessCard.png";
 const projects = [
   {
     id: 1,
-    image:
-      "https://images.pexels.com/photos/5380642/pexels-photo-5380642.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: colabee,
     title: "COOLABEE ECOMMERCE WEBSITE",
     description:
-      "This is a fully working ecomerce website with search functionality, cart and account",
+      "An ecommerce website built with JavaScript, Firebase, and Vue.js to provide a modern and user-friendly online shopping experience. This website is built with Vue.js as the front-end framework, allowing for easy creation of interactive and dynamic interfaces.",
     stack: [
-      { name: "#javascript", color: "bg-purple-600" },
-      { name: "#vuejs", color: "bg-green-700" },
-      { name: "#firebase", color: "bg-yellow-400", fontColor: "text-grayBg" },
+      {
+        name: "#javascript",
+        color: "bg-javascriptBg",
+        fontColor: "text-grayBg",
+      },
+      { name: "#firebase", color: "bg-firebaseBg", fontColor: "text-grayBg" },
+      { name: "#vuejs", color: "bg-vueBg", fontColor: "text-grayBg" },
     ],
     github: "https://github.com/iAthman83/coolabee-ecommerce-website-vue",
-    webiste: "https://coolabee.vercel.app/",
+    website: "https://coolabee.vercel.app/",
   },
   {
     id: 3,
-    image:
-      "https://images.pexels.com/photos/5926389/pexels-photo-5926389.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    image: portfolio,
     title: "PROGRAM WITH ABU",
     description:
-      "My personal portfolio website where you can get to know more about me",
+      "A portfolio website built with JavaScript and React provides a dynamic and visually appealing way to showcase a person's skills, projects, and experiences. The website uses React as the front-end library, allowing for easy creation of reusable components and efficient rendering of the user interface.",
     stack: [
-      { name: "#javascript", color: "bg-purple-600" },
-      { name: "#reactjs", color: "bg-red-600" },
+      {
+        name: "#javascript",
+        color: "bg-javascriptBg",
+        fontColor: "text-grayBg",
+      },
+      { name: "#reactjs", color: "bg-reactBg", fontColor: "text-grayBg" },
     ],
     github: "https://github.com/iAthman83/react-portfolio",
-    webiste: "https://abuportfolio.vercel.app/",
+    website: "https://programwithabu.com/",
   },
   {
     id: 2,
-    image:
-      "https://images.pexels.com/photos/5926393/pexels-photo-5926393.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: shomi,
     title: "SHOMI ECOMMERCE WEBSITE",
     description:
-      "This is a fully working ecomerce website with search functionality, cart and account",
+      "An ecommerce website built with JavaScript, Firebase, and React offers a modern and scalable platform for online businesses to sell their products and services. React serves as the front-end library and redux for state management, enabling the creation of interactive and responsive interfaces that provide a seamless user experience.",
     stack: [
-      { name: "#javascript", color: "bg-purple-600" },
-      { name: "#reactjs", color: "bg-red-700" },
-      { name: "#firebase", color: "bg-yellow-400", fontColor: "text-grayBg" },
+      {
+        name: "#javascript",
+        color: "bg-javascriptBg",
+        fontColor: "text-grayBg",
+      },
+      { name: "#firebase", color: "bg-firebaseBg", fontColor: "text-grayBg" },
+      { name: "#reactjs", color: "bg-reactBg", fontColor: "text-grayBg" },
     ],
-    github: "https://github.com/iAthman83/react-portfolio",
-    webiste: "https://abuportfolio.vercel.app/",
-  },
-  {
-    id: 4,
-    image:
-      "https://images.pexels.com/photos/5380792/pexels-photo-5380792.jpeg?auto=compress&cs=tinysrgb&w=400",
-    title: "HOME ON THE NILE",
-    description:
-      "A guest house in Jinja for guests to come stay when on holiday in Jinja",
-    stack: [{ name: "#wordpress", color: "bg-blue-700" }],
-  },
-  {
-    id: 5,
-    image:
-      "https://images.pexels.com/photos/5926382/pexels-photo-5926382.jpeg?auto=compress&cs=tinysrgb&w=400",
-    title: "UGANDAN CHEMIST",
-    description:
-      "This is a learning management system for students who want to learn chemistry",
-    stack: [{ name: "#wordpress", color: "bg-blue-700" }],
+    github: "https://github.com/iAthman83/shomi_frontend",
+    website: "https://shomi.vercel.app/",
   },
   {
     id: 7,
-    image:
-      "https://images.pexels.com/photos/5380792/pexels-photo-5380792.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: businessCard,
     title: "BUSINESS CARD GENERATOR",
     description:
-      "This project is made for anyone to generate a business card. This this you can customise according to color and font.",
+      "A business card generator website built with JavaScript and Vue.js offers an easy and efficient way to create professional business cards online. The website utilizes Vue.js as the front-end framework, allowing for the creation of interactive and dynamic interfaces with an option to download the card",
     stack: [
-      { name: "#javascript", color: "bg-purple-700" },
-      { name: "#vuejs", color: "bg-green-700" },
+      {
+        name: "#javascript",
+        color: "bg-javascriptBg",
+        fontColor: "text-grayBg",
+      },
+      { name: "#vuejs", color: "bg-vueBg", fontColor: "text-grayBg" },
     ],
+    github: "https://github.com/iAthman83/business-card-generator-vue",
+    website: "https://business-card-generator-vue.vercel.app/",
   },
   {
+    id: 4,
+    image: wordpress,
+    title: "HOME ON THE NILE",
+    description:
+      "A guest house website built with WordPress and Elementor offers a visually appealing and user-friendly platform for showcasing the guest house's amenities, services, and accommodations. WordPress serves as the content management system, providing a robust platform for creating and managing website content.",
+    stack: [
+      { name: "#wordpress", color: "bg-wordpressBg", fontColor: "text-grayBg" },
+      { name: "#elementor", color: "bg-elementorBg", fontColor: "text-grayBg" },
+    ],
+    github: "https://homeonthenile.com/",
+    website: "https://homeonthenile.com/",
+  },
+  // {
+  //   id: 5,
+  //   image: wordpress,
+  //   title: "UGANDAN CHEMIST",
+  //   description:
+  //     "This is a learning management system for students who want to learn chemistry",
+  //   stack: [
+  //     { name: "#wordpress", color: "bg-wordpressBg", fontColor: "text-grayBg" },
+  //     { name: "#elementor", color: "bg-elementorBg", fontColor: "text-grayBg" },
+  //   ],
+  //   github: "https://ugandanchemist.com/",
+  //   website: "https://ugandanchemist.com/",
+  // },
+  {
     id: 6,
-    image:
-      "https://images.pexels.com/photos/5380651/pexels-photo-5380651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    image: wordpress,
     title: "HORIZON INTERNATIONAL SCHOOL",
     description:
-      "This is fully functioning website for an international school based in Jinja, Uganda, Africa",
-    stack: [{ name: "#wordpress", color: "bg-blue-700" }],
+      "An international school website built with WordPress and Elementor provides an informative and user-friendly platform for showcasing the school's academic programs, extracurricular activities, admissions, and other services. WordPress serves as the content management system, providing a flexible and scalable platform for creating and managing website content.",
+    stack: [
+      { name: "#wordpress", color: "bg-wordpressBg", fontColor: "text-grayBg" },
+      { name: "#elementor", color: "bg-elementorBg", fontColor: "text-grayBg" },
+    ],
+    github: "https://horizon.ac.ug/",
+    website: "https://horizon.ac.ug/",
   },
 ];
 

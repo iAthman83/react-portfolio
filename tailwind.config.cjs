@@ -55,6 +55,13 @@ module.exports = {
       siteBg: "#2A303C",
       mailBlue: "#219ebc",
       textGray: "#9EADBB",
+      projectCardBg: "#0E0E0E",
+      firebaseBg: "#FCCA3F",
+      javascriptBg: "#F7DF1E",
+      vueBg: "#41B883",
+      reactBg: "#00CCFF",
+      wordpressBg: "#2C99C6",
+      elementorBg: "#D63362",
     }),
     columns: {
       auto: "auto",

@@ -62,6 +62,11 @@ module.exports = {
       reactBg: "#00CCFF",
       wordpressBg: "#2C99C6",
       elementorBg: "#D63362",
+      "primary-brand": "#FF7B00",
+      "primary-dark": "#1B181E",
+      "primary-bg": "#F0F0F0",
+      "light-accent": "#83A3A9",
+      "dark-accent": "#877068",
     }),
     columns: {
       auto: "auto",

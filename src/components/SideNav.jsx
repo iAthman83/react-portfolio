@@ -117,11 +117,22 @@ function SideNav({ aboutRef, homeRef, projectsRef, workflowRef }) {
           href="https://twitter.com/iathman83"
           target="_blank"
           rel="noreferrer"
-          className="flex space-x-2 items-center cursor-pointer text-white px-4 md:px-2 p-2 px-auto bg-zinc-700 rounded-lg md:rounded-full hover:bg-twitterBlue"
+          className="hidden md:flex space-x-2 items-center cursor-pointer text-white px-4 md:px-2 p-2 px-auto bg-zinc-700 rounded-lg md:rounded-full hover:bg-twitterBlue"
         >
           <RiTwitterFill size={20} className="text-twitterBlue md:text-white" />
           <h1 className="hidden">Twitter</h1>
         </a>
+        {/* blog button on mobile view */}
+        <Link
+          to="/blog"
+          className="flex md:hidden space-x-2 items-center cursor-pointer text-white px-4 md:px-2 p-2 px-auto bg-zinc-700 rounded-lg md:rounded-full hover:bg-twitterBlue"
+        >
+          <HiOutlineDocumentText
+            size={20}
+            className="text-yellow-500 md:text-white"
+          />
+          <h1 className="hidden">Twitter</h1>
+        </Link>
       </div>
       {/* nav */}
       <nav className="hidden md:flex md:flex-col md:justify-center space-x-1 md:space-x-0 md:space-y-2 md:ml-6 mt-12">

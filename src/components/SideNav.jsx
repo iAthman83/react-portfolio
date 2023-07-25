@@ -4,6 +4,7 @@ import {
   HiOutlineUser,
   HiOutlineCube,
   HiOutlineDesktopComputer,
+  HiOutlineDocumentText,
 } from "react-icons/hi";
 import {
   RiLinkedinFill,
@@ -13,6 +14,7 @@ import {
   RiMailFill,
 } from "react-icons/ri";
 import portrait from "../assets/portrait-rounded-webp.webp";
+import { Link } from "react-router-dom";
 
 function SideNav({ aboutRef, homeRef, projectsRef, workflowRef }) {
   const [home, setHome] = useState(true);
@@ -198,6 +200,14 @@ function SideNav({ aboutRef, homeRef, projectsRef, workflowRef }) {
           <HiOutlineDesktopComputer size={24} className="text-zinc-400" />
           <h1 className="hidden md:block text-zinc-400">Workflow</h1>
         </section> */}
+        {/* blog */}
+        <Link
+          to="/blog"
+          className="flex space-x-4 items-center cursor-pointer text-white p-2 px-auto rounded-lg hover:bg-zinc-700"
+        >
+          <HiOutlineDocumentText size={24} className="text-zinc-400" />
+          <h1 className="hidden md:block text-zinc-400">Blog</h1>
+        </Link>
       </nav>
     </div>
   );

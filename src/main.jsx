@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import Blog from "./pages/Blog";
+import SingleBlogPage from "./components/SingleBlogPage";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
   {
     path: "/blog",
     element: <Blog />,
+  },
+  {
+    path: "/blog/:postId",
+    element: <SingleBlogPage />,
   },
   {
     path: "*",

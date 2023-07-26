@@ -3,7 +3,7 @@ import postImage from "../assets/robot.jpg";
 
 const BlogCardComponent = ({ postData }) => {
   return (
-    <>
+    <Link to={`/blog/${postData._id}`}>
       <div className="flex flex-col space-y-2 bg-primary-bg w-72 hover:cursor-pointer hover:scale-105 transition-transform duration-200 ease-out rounded overflow-hidden">
         <div>
           <img src={postData.image} alt="image" height={50} width={300} />
@@ -38,7 +38,7 @@ const BlogCardComponent = ({ postData }) => {
         ))}
         {/* </div> */}
       </div>
-    </>
+    </Link>
   );
 };
 

@@ -29,6 +29,7 @@ const Blog = () => {
       .then((data) => setPosts(data))
       .catch(console.error);
   }, []);
+  console.log(posts);
   return (
     <div className="flex flex-col lg:px-24 px-4">
       <div className="flex justify-center my-4">

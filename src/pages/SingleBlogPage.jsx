@@ -2,6 +2,29 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { PortableText } from "@portabletext/react";
 import { client } from "../../lib/client";
+import getYouTubeId from "get-youtube-id";
+// import LiteYouTubeEmbed from "react-lite-youtube-embed";
+// import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css";
+import YouTube from "react-youtube";
+
+const opts = {
+  height: "390",
+  width: "640",
+  playerVars: {
+    // https://developers.google.com/youtube/player_parameters
+    autoplay: 1,
+  },
+};
+
+const serializers = {
+  types: {
+    youtube: ({ node }) => {
+      const { url } = node;
+      const id = getYouTubeId(url);
+      return <YouTube videoId={id} opts={opts} />;
+    },
+  },
+};
 
 const SingleBlogPage = () => {
   const params = useParams();
@@ -62,7 +85,7 @@ const SingleBlogPage = () => {
           </p>
         </div>
         <div>
-          <PortableText value={singlePost.content} />
+          <PortableText value={singlePost.content} types={serializers} />
         </div>
       </div>
     );

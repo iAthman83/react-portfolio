@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import Blog from "./pages/Blog";
-import SingleBlogPage from "./components/SingleBlogPage";
+import SingleBlogPage from "./pages/SingleBlogPage";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
